@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+cloudbox:
+image: ${ECR_IMAGE_URI}:latest
+container_name: cloudbox-app
+ports:
+- "80:80"
+restart: always
