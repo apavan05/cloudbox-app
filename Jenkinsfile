@@ -1,7 +1,5 @@
 pipeline {
 agent any
-
-```
 parameters {
     string(name: 'BRANCH_NAME', defaultValue: 'main', description: 'Git branch to build')
     choice(name: 'DEPLOY_ENV', choices: ['staging', 'production'], description: 'Deployment environment')
@@ -14,6 +12,6 @@ stages {
         }
     }
 }
-```
+
 
 }
